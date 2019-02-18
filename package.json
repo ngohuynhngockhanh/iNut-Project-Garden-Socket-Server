@@ -1,0 +1,19 @@
+{
+  "name": "garden-socket-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ngohuynhngockhanh/iNut-Project-Garden-Socket-Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngohuynhngockhanh/iNut-Project-Garden-Socket-Server/issues"
+  },
+  "homepage": "https://github.com/ngohuynhngockhanh/iNut-Project-Garden-Socket-Server#readme"
+}
