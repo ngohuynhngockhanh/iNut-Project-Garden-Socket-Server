@@ -1,0 +1,30 @@
+{
+	"name": "central-node-version-1",
+	"version": "0.0.1",
+	"format": {
+		"soil_moisture": {
+			"type"	: "integer",
+			"index"	: 0
+		},
+		"soil_temperature": {
+			"type"	: "integer",
+			"index"	: 1
+		},
+		"soil_status": {
+			"type"	: "integer",
+			"index"	: 3
+		},
+		"rain_sensor": {
+			"type"	: "integer",
+			"index"	: 4
+		},
+		"watering_mode": {
+			"type"	: "integer",
+			"index"	: 5
+		},
+		"watering_humidity": {
+			"type"	: "integer",
+			"index"	: 7
+		}
+	}
+}
