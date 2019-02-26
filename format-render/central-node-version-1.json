@@ -2,29 +2,190 @@
 	"name": "central-node-version-1",
 	"version": "0.0.1",
 	"format": {
-		"soil_moisture": {
-			"type"	: "integer",
-			"index"	: 0
+		"watering_3": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 0
 		},
-		"soil_temperature": {
-			"type"	: "integer",
-			"index"	: 1
+		"watering_2": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 1
 		},
-		"soil_status": {
+		"watering_1": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 2
+		},
+		"automatic": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 3
+		},
+		"anti_thief": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 4
+		},
+		"electric_leakage": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 5
+		},
+		"electric_garden": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 6
+		},
+		"pump_safety": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 7
+		},
+		"damaged_magnetic_valve": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 8
+		},
+		"broken_tube": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 9
+		},
+		"water_day_and_night": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 10
+		},
+		"pump_against_flooding": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 11
+		},
+		"anti_flood_function": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 12
+		},
+		"raining": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 13
+		},
+		"river_water": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 14
+		},
+		"water_in_the_pump": {
+			"type"	: "bit",
+			"index"	: 0,
+			"bit"	: 15
+		},
+
+
+
+		"out_of_water": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 0
+		},
+		"timer_0": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 1
+		},
+		"timer_35": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 3
+		},
+		"timer_20": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 4
+		},
+		"timer_10": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 5
+		},
+		"watering_auto": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 6
+		},
+		"watering_after_5_minute": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 7
+		},
+		"sensor_5": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 8
+		},
+		"sensor_4": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 9
+		},
+		"sensor_3": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 10
+		},
+		"sensor_2": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 11
+		},
+		"sensor_1": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 12
+		},
+		"watering_5": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 13
+		},
+		"watering_4": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 14
+		},
+		"running_fertilizer": {
+			"type"	: "bit",
+			"index"	: 1,
+			"bit"	: 15
+		},
+
+
+
+		"machine_temperature": {
 			"type"	: "integer",
 			"index"	: 3
 		},
-		"rain_sensor": {
+
+		"hall_sensor": {
 			"type"	: "integer",
 			"index"	: 4
 		},
-		"watering_mode": {
+
+		"valve_count": {
 			"type"	: "integer",
 			"index"	: 5
 		},
-		"watering_humidity": {
+
+		"fertilizer": {
+			"type"	: "integer",
+			"index"	: 6
+		},
+		"day_night": {
 			"type"	: "integer",
 			"index"	: 7
 		}
+
 	}
 }

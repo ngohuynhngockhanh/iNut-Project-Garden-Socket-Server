@@ -57,9 +57,15 @@ client.on('connection', function(socket){
 	}, 10000)
 
 	socket.emit('please_login')
+	
 
+	var send_format_type = function() {
+		socket.emit("all_formats", formats)
+	}
 
-	socket.on('login', function(auth_info) {
+	var login = function(auth_info) {
+		if (!auth_info.data)
+			return false
 		console.log("Login using", auth_info)
 		_.assign(auth, auth_info)
 
@@ -83,6 +89,7 @@ client.on('connection', function(socket){
 			    })
 			    clearTimeout(autoDisconnect)
 			    console.log(auth_info, "Auth => Ok")
+			    send_format_type()
 			  } catch(e) {
 			  	console.log("Auth Error", e)
 			  	socket.disconnect()
@@ -91,9 +98,10 @@ client.on('connection', function(socket){
 		}
 		 
 		request(options, callback);
-	})
+	}
 
-
+	socket.on('please_send_format_type', send_format_type)
+	socket.on('login', login)
 });
 
 
